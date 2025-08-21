@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
@@ -49,6 +51,11 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+        <div className="mt-4 w-full flex justify-center sm:justify-start">
+          <Link href="/about">
+            <button className="rounded-full border border-solid border-blue-500 text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]">About</button>
+          </Link>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
